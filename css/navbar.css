@@ -1,5 +1,12 @@
 .tabs-underlined {
     display: flex;
+    flex-direction: row-reverse;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -11,9 +18,10 @@
     cursor: pointer;
     text-decoration: none;
     border-bottom: 4px solid transparent;
+    padding-top: 1.3em;
 }
 
 .tabs-underlined .tab-underlined.active {
     opacity: 1;
-    border-bottom: 3px solid #555555;
+    border-top: 3px solid #555555;
 }
