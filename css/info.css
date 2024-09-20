@@ -1,0 +1,114 @@
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    border-radius: 20px; /* Bords arrondis */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+    max-width: fit-content;
+    overflow: hidden;
+}
+
+#location {
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    outline: none;
+    border: none;
+}
+
+.location-dot    {
+    color: black;
+    border: none;
+    width: 50px;
+    aspect-ratio: 1
+}
+
+.fa-location-dot {
+    color: #000;
+}
+
+.text {
+    font-size: 14px; /* Taille du texte */
+    color: #333; /* Couleur du texte */
+}
+
+.search-button {
+    background-color: #007bff; /* Couleur du bouton */
+    color: white; /* Couleur du texte du bouton */
+    border: none;
+    padding: 5px 15px;
+    font-size: 18px; /* Taille du texte du bouton */
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: stretch;
+}
+
+.search-button-mobile {
+    display: none;
+}
+
+.search-button:hover {
+    background-color: #0056b3; /* Couleur du bouton au survol */
+}
+
+.filtres{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 35px;
+    gap: 15px;
+}
+
+.filtres ul {
+    padding: 0;
+    list-style: none;
+}
+
+.filtres-liste {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid #D9D9D9;
+    padding: 8px 24px;
+    border-radius: 25px;
+    margin-right: 15px;
+}
+
+.filtres-liste:hover {
+    color: black;
+    background-color: #DEEBFF;
+}
+
+.filtres i {
+    margin-right: 10px;
+}
+
+.herbergement-titre {
+    margin: 0;
+    font-size: 22px;
+}
+
+.marseille-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.marseille-card img {
+    object-fit: cover;
+}
+
+.titre-card {
+    font-size: 16px;
+}
+
+.neutral-star {
+    color: var(--main-bg-color)
+}

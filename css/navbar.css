@@ -1,6 +1,7 @@
 .tabs-underlined {
     display: flex;
     flex-direction: row-reverse;
+    list-style: none;
 }
 
 .navbar {
@@ -12,16 +13,15 @@
 
 .tabs-underlined .tab-underlined {
     color: black;
-    padding: 8px;
+    padding: 14px 8px 8px 8px;
     margin: 8px;
-    opacity: .4;
     cursor: pointer;
     text-decoration: none;
     border-bottom: 4px solid transparent;
-    padding-top: 1.3em;
 }
 
-.tabs-underlined .tab-underlined.active {
+.tabs-underlined .tab-underlined:hover {
     opacity: 1;
-    border-top: 3px solid #555555;
+    color: var(--main-color);
+    border-top: 3px solid var(--main-color);
 }
