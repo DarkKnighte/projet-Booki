@@ -95,6 +95,7 @@
 }
 
 .marseille-card {
+    display: grid;
     background-color: white;
     border-radius: 20px;
     padding: 5px;
@@ -103,9 +104,11 @@
 
 .marseille-card img {
     object-fit: cover;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
 }
 
-.titre-card {
+.card {
     font-size: 16px;
 }
 
