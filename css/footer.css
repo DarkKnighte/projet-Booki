@@ -1,0 +1,14 @@
+footer {
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.additional-info {
+    list-style: none;
+}
+
+.additional-info a {
+    gap: 15px;
+}
