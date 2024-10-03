@@ -37,6 +37,12 @@
     color: #333; /* Couleur du texte */
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
 .search-button {
     background-color: #007bff; /* Couleur du bouton */
     color: white; /* Couleur du texte du bouton */
@@ -61,8 +67,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-top: 35px;
     gap: 15px;
+    align-items: center;
 }
 
 .filtres ul {
@@ -87,36 +93,4 @@
 
 .filtres i {
     margin-right: 10px;
-}
-
-.herbergement-titre {
-    margin: 0;
-    font-size: 22px;
-}
-
-.accommodations {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.marseille-card {
-    display: grid;
-    grid-template: 1fr / 3;
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    max-width: fit-content;
-}
-
-.marseille-card img {
-    cursor: pointer;
-    object-fit: cover;
-    width: 250px;
-    border-radius: 15px 15px 0 0;
-}
-
-
-.neutral-star {
-    color: var(--main-bg-color)
 }

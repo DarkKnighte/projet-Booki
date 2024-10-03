@@ -1,8 +1,8 @@
 .activities-card {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     max-height: 439px;
-    max-width: fit-content;
 }
 
 .activities-card img {
