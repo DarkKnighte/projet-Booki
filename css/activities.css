@@ -3,17 +3,28 @@
     flex-direction: column;
     justify-content: space-between;
     max-height: 439px;
-    /* max-width: fit-content; */
+    max-width: 297.5px;
+    gap: 30px;
+    border-radius: 20px; 
+    box-shadow: 0px 3px 15px 0px #0000001A;
+}
+
+.activities h2 {
+    align-self: baseline;
+    height: fit-content;
+    font-weight: 700;
 }
 
 #activities {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
 }
 
 .activities-card img {
     cursor: pointer;
-    max-width: 300px;
     max-height: 380px;
     border-radius: 20px 20px 0 0; 
+    min-width: fit-content;
 }
