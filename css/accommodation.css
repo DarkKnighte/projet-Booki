@@ -33,14 +33,14 @@
     row-gap:  30px;
     .card {
         cursor: pointer;
-        
+
         img {
             object-fit: cover;
             width: 100%;
             aspect-ratio: 250/125;
             border-radius: 15px 15px 0 0;
         }
-        
+
         .card-content {
             display: flex;
             flex-direction: column;
@@ -103,4 +103,37 @@
     cursor: pointer;
     font-size: 18px;
     font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .accommodations-and-populars {
+      flex-direction: column;
+  }
+
+  .accommodations {
+      width: 100%;
+  }
+
+  .populars {
+      width: 100%;
+      margin-top: 50px;
+  }
+
+  .populars-cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .populars-cards a {
+      width: 30%;
+  }
+
+  .populars-cards .card-title {
+      font-size: 14px;
+  }
+
+  .populars-cards .card-subtitle {
+      font-size: 13px;
+  }
 }

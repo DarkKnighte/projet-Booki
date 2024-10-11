@@ -75,41 +75,6 @@ a {
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
-/****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
-    .accommodations-and-populars {
-        flex-direction: column;
-    }
-
-    .accommodations {
-        width: 100%;
-    }
-
-    .populars {
-        width: 100%;
-        margin-top: 50px;
-    }
-
-    .populars-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .populars-cards a {
-        width: 30%;
-    }
-
-    .populars-cards .card-title {
-        font-size: 14px;
-    }
-
-    .populars-cards .card-subtitle {
-        font-size: 13px;
-    }
-}
-
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */

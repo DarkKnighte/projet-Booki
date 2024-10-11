@@ -21,15 +21,25 @@
     border: none;
 }
 
-.location-dot    {
+.location-dot {
     color: black;
     border: none;
     width: 50px;
-    aspect-ratio: 1
+    aspect-ratio: 1;
+
+    @media (max-width: 767.98px) {
+      color: black;
+      border: none;
+      width: 50px;
+  }
 }
 
 .fa-location-dot {
     color: #000;
+
+    @media (max-width: 767.98px) {
+      color: #000;
+    }
 }
 
 .text {
@@ -53,10 +63,36 @@ form {
     cursor: pointer;
     transition: background-color 0.3s;
     align-self: stretch;
+
+    @media (max-width: 767.98px) {
+    display: none;
+    }
 }
 
 .search-button-mobile {
+  display: none;
+
+  @media (max-width: 767.98px) {
+    display: flex;
+    border: none;
+  }
+}
+
+.fa-magnifying-glass {
     display: none;
+
+    @media (max-width: 767.98px) {
+    display: flex;
+    padding: 5px 15px;
+    cursor: pointer;
+    max-height: 49px;
+    max-width: 49px;
+    border-radius: 15px;
+    border: 1px #0065FC;
+    gap: 10px;
+    color: white;
+    background-color: var(--main-color);
+    }
 }
 
 .search-button:hover {
