@@ -9,6 +9,16 @@
     }
 }
 
+@media (max-width: 767.98px) {
+    #accommodations {
+    flex: 1;
+    }
+
+    #activities {
+      flex: 1;
+    }
+}
+
 .navbar {
     display: flex;
     flex-wrap: wrap;
