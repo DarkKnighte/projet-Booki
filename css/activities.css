@@ -1,46 +1,51 @@
+
 .activities h2 {
-    align-self: baseline;
-    height: fit-content;
-    font-weight: 700;
+  align-self: baseline;
+  height: fit-content;
+  font-weight: 700;
 }
 
 #activities {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
 }
 
 .activities-card {
-    display: flex;
-    flex-direction: column;
-    max-height: 439px;
-    max-width: 297.5px;
-    gap: 10px;
-    border-radius: 20px;
-    box-shadow: 0px 3px 15px 0px #0000001A;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border-radius: 20px;
+  box-shadow: 0px 3px 15px 0px #0000001A;
 
-        h3 {
-            padding: 20px 19px 20px 19px;
-        }
+      h3 {
+          padding: 20px 19px 20px 19px;
+      }
 }
 
 #activities-card-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: calc(100 / 1280 * 30%);
 
-    @media (max-width: 767.98px) {
-      flex-wrap: wrap;
-      flex-direction: column;
-      gap: 15px;
-    }
+  @media (max-width: 767.98px) {
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
+  }
 }
 
 .activities-card img {
-    cursor: pointer;
-    max-height: 380px;
-    border-radius: 20px 20px 0 0;
-    aspect-ratio: 300 / 440;
-    object-fit: cover;
+  width: 100%;
+  cursor: pointer;
+  max-height: 380px;
+  border-radius: 20px 20px 0 0;
+  aspect-ratio: 300 / 380;
+  object-fit: cover;
+  @media (max-width:  1024px) {
+      max-height: 200px;
+      aspect-ratio: 190/200;
+  }
 }

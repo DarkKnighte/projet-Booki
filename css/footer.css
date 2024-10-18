@@ -1,20 +1,21 @@
 footer {
-    background-color: var(--main-bg-color);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  background-color: var(--main-bg-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 
-    @media (max-width: 767.98px) {
-        flex-direction: column;
-        gap: 15px;
-        background-color: var(--main-bg-color);
-    }
+  @media (max-width: 767.98px) {
+      flex-direction: column;
+      gap: 15px;
+      background-color: var(--main-bg-color);
+  }
 }
 
 .additional-info {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px;
-    list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 15px;
+  padding: 20px;
+  list-style: none;
 }

@@ -1,7 +1,18 @@
 .tabs-underlined {
     display: flex;
-    flex-direction: row-reverse;
     list-style: none;
+
+    @media (max-width: 767.98px) {
+      gap: 15px;
+      padding: 0px;
+      width: 100%;
+    }
+}
+
+.tab-underlined {
+  @media (max-width: 767.98px) {
+    flex: 1;
+  }
 }
 
 .navbar {
@@ -9,6 +20,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 767.98px) {
+        flex-direction: column;
+        padding: 30px;
+        gap: 10px;
+    }
 }
 
 .tabs-underlined .tab-underlined {
@@ -24,4 +41,9 @@
     opacity: 1;
     color: var(--main-color);
     border-top: 3px solid var(--main-color);
+
+    @media (max-width: 767.98px) {
+      border-top: none;
+      border-bottom: 3px solid var(--main-color);
+    }
 }
