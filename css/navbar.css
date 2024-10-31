@@ -1,27 +1,26 @@
 .tabs-underlined {
   display: flex;
   list-style: none;
-
-  @media (max-width: 767.98px) {
-    padding: 0px;
-    width: 100%;
-      li {
-          flex: 1;
-          text-align: center;
-          padding-bottom: 15px;
-          border-bottom: 3px solid var(--main-bg-color);
-          &:hover {
-              border-bottom: 3px solid var(--main-color);
-          }
-      }
-  }
 }
 
 @media (max-width: 767.98px) {
-  #accommodations {
-  flex: 1;
+  .tabs-underlined {
+    padding: 0px;
+    width: 100%;
   }
 
+  .tabs-underlined li {
+    flex: 1;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 3px solid var(--main-bg-color);
+  }
+
+  .tabs-underlined li:hover {
+    border-bottom: 3px solid var(--main-color);
+  }
+
+  #accommodations,
   #activities {
     flex: 1;
   }
@@ -32,13 +31,16 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
 
-  @media (max-width: 767.98px) {
-      flex-direction: column;
-      gap: 10px;
-      img {
-          padding: 30px 0;
-      }
+@media (max-width: 767.98px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar img {
+    padding: 30px 0;
   }
 }
 
@@ -55,8 +57,10 @@
   opacity: 1;
   color: var(--main-color);
   border-top: 3px solid var(--main-color);
+}
 
-  @media (max-width: 767.98px) {
+@media (max-width: 767.98px) {
+  .tabs-underlined .tab-underlined:hover {
     border-top: none;
   }
 }

@@ -17,10 +17,10 @@
   flex: 1;
   border-radius: 20px;
   box-shadow: 0px 3px 15px 0px #0000001A;
+}
 
-      h3 {
-          padding: 20px 19px 20px 19px;
-      }
+.activities-card h3 {
+  padding: 20px 19px;
 }
 
 #activities-card-section {
@@ -28,8 +28,10 @@
   flex-direction: row;
   justify-content: space-between;
   gap: calc(100 / 1280 * 30%);
+}
 
-  @media (max-width: 767.98px) {
+@media (max-width: 767.98px) {
+  #activities-card-section {
     flex-wrap: wrap;
     flex-direction: column;
     gap: 15px;
@@ -43,9 +45,11 @@
   border-radius: 20px 20px 0 0;
   aspect-ratio: 300 / 380;
   object-fit: cover;
+}
 
-  @media (max-width:  1024px) {
-      max-height: 200px;
-      aspect-ratio: 190/200;
+@media (max-width: 1024px) {
+  .activities-card img {
+    max-height: 200px;
+    aspect-ratio: 190 / 200;
   }
 }
