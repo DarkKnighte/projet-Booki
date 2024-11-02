@@ -46,6 +46,12 @@
   gap: 30px;
 }
 
+@media (max-width: 1024px) {
+.accommodations-and-populars .accommodations {
+    width: 100%;
+  }
+}
+
 @media (max-width: 767.98px) {
   .accommodations-and-populars .accommodations {
     width: 100%;
@@ -153,9 +159,6 @@
 }
 
 @media (max-width: 1024px) {
-  .accommodations {
-    width: 100%;
-  }
 
   .populars {
     width: 100%;
