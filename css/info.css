@@ -156,9 +156,20 @@ form {
 }
 
 .filtres ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+@media (max-width: 1024px) {
+  .filtres ul {
+  flex-wrap: nowrap;
+  width: max-content;
+  }
+
 }
 
 @media (max-width: 767.98px) {
@@ -166,7 +177,8 @@ form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    width: 100%;
+    min-width: 100%;
+    width: max-content;
   }
 }
 
@@ -182,6 +194,8 @@ form {
 
 @media (max-width: 767.98px) {
   .filtres-liste {
+    display: flex;
+    justify-content: center;
     padding: 12px 8px;
   }
 }
